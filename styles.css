@@ -1,8 +1,114 @@
-body {
-    background-color: red;
-    font: Courier;
+* {
+    box-sizing: border-box;
 }
 
-h1 {
-    font-weight: 100;
+body {
+    margin: 0;
+    font-family: Tahoma;
+    background: #f5f6f7;
+}
+
+.navbar {
+    text-shadow: 2px 2px #4794ec;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2px;
+    background-color: #6cb7d4;
+    color: #fff;
+    border-bottom: 4px solid #4794ec;
+    font-size: x-large;
+    outline: 5px dashed #4794ec;
+    text-shadow: 4px 4px #4794ec;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery::after {
+    content: "";
+    width: 350px;
+}
+.footer {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2px;
+    background-color: #6cb7d4;
+    color: #fff;
+    border-bottom: 4px solid #4794ec;
+    font-size: small;
+    outline: 5px dashed #4794ec;
+    text-shadow: 2px 2px #4794ec;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #4794ec;
+    text-shadow: 2px 2px #fff;
+}
+
+
+ul.navbar {
+    list-style-type: none;
+}
+
+nav {
+    padding-bottom: 15px;
+}
+
+.homepageInfo {
+    width: 500px;
+    height: 375px;
+    outline: 5px dashed #4794ec;
+    padding: 10px 20px;
+}
+
+p {
+    text-align: justify;
+    color: #4794ec;
+    font-size: x-large;
+}
+
+h2 {
+    text-align: center;
+    color: #4794ec;
+}
+
+.favouriteArtists {
+    width: 500px;
+    height: 375px;
+    outline: 5px dashed #4794ec;
+    padding: 10px 20px;
+}
+
+a.favArtistLink {
+    color: #4794ec;
+    font-size: large;
+}
+
+a:hover.favArtistLink {
+    color: #146acc;
+    text-shadow: 1px 1px #4794ec;
 }
